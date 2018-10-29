@@ -50,8 +50,8 @@ public class CardViewFilemAdapter extends RecyclerView.Adapter<CardViewFilemAdap
 
         cardViewHolder.txtTitle.setText(f.getTxtTitle());
         String overview = f.getTxtOverview();
-        if(overview.length() >= 80){
-            overview = f.getTxtOverview().substring(0, 80) + "... ";
+        if(overview.length() >= 60){
+            overview = f.getTxtOverview().substring(0, 60) + "... ";
         }
         cardViewHolder.txtOverview.setText(overview);
         cardViewHolder.txtRelease.setText(f.getReleaseDate());

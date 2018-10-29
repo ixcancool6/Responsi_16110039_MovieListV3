@@ -16,6 +16,7 @@ public class DetailFilem extends AppCompatActivity {
     private TextView txtOverview;
     private TextView txtRelease;
     private ImageView imgPoster;
+    private TextView txtRating;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,14 +25,16 @@ public class DetailFilem extends AppCompatActivity {
         Filem f = (Filem) getIntent().getSerializableExtra("F");
         txtTitle = (TextView) findViewById(R.id.txtTitle);
         txtTitle.setText(f.getTxtTitle());
-        txtOverview = (TextView) findViewById(R.id.txtDescription);
+        txtOverview = (TextView) findViewById(R.id.txtSynopsisContent);
         txtOverview.setText(f.getTxtOverview());
         txtRelease = (TextView) findViewById(R.id.txtDate);
-        txtRelease.setText(f.getReleaseDate());
-        imgPoster = (ImageView) findViewById(R.id.posterMovie);
+        txtRelease.setText(" "+f.getReleaseDate());
+        imgPoster = (ImageView) findViewById(R.id.ivPoster);
         Glide.with(getApplicationContext())
                 .load(f.getImgPoster())
                 .override(350, 350)
                 .into(imgPoster);
+        txtRating = (TextView) findViewById(R.id.txtRating);
+        txtRating.setText(" "+f.getRating());
     }
 }

@@ -11,12 +11,14 @@ public class Filem implements Serializable {
     private String txtOverview;
     private String releaseDate;
     private String imgPoster;
+    private String rating;
 
-    public Filem(String title, String overview, String releaseDate, String imgPoster) {
+    public Filem(String title, String overview, String releaseDate, String imgPoster, String rating) {
         this.txtTitle = title;
         this.txtOverview = overview;
         this.releaseDate = releaseDate;
         this.imgPoster = imgPoster;
+        this.rating = rating;
     }
 
     public String getImgPoster() {
@@ -43,13 +45,12 @@ public class Filem implements Serializable {
         this.txtOverview = txtOverview;
     }
 
-    public String getReleaseDate() {
-        return releaseDate;
-    }
+    public String getReleaseDate() {return releaseDate;}
 
-    public void setReleaseDate(String releaseDate) {
-        this.releaseDate = releaseDate;
-    }
+    public void setReleaseDate(String releaseDate) {this.releaseDate = releaseDate;}
 
+    public String getRating() {return rating;}
+
+    public void setRating(String rating) {this.rating = rating;}
 
 }

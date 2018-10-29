@@ -5,4 +5,5 @@
     <string name="txtDate">発売日 ： </string>
     <string name="txtSyn">概要：</string>
     <string name="txtMenu">言語設定</string>
+    <string name="txtRating">MovieDBを評価する : </string>
 </resources>

@@ -4,4 +4,5 @@
     <string name="txtDate">Release Date : </string>
     <string name="txtSyn">Synopsis :</string>
     <string name="txtMenu">Language Settings</string>
+    <string name="txtRating">Rating MovieDB : </string>
 </resources>

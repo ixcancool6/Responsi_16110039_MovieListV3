@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
     private ArrayList<Filem> list;
     private Button btnMoveActivity;
 
-    private String URL = "https://api.themoviedb.org/3/movie/now_playing?api_key=b0d1b7f14b9fa185823ff44f5706c76b&region=PH";
+    private String URL = "https://api.themoviedb.org/3/movie/now_playing?api_key=b0d1b7f14b9fa185823ff44f5706c76b&region=US";
 
 
 

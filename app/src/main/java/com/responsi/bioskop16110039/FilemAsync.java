@@ -45,12 +45,13 @@ public class FilemAsync extends AsyncTaskLoader<ArrayList<Filem>> {
                 final JSONArray arrayResults = objData.getJSONArray("results");
                 if(arrayResults != null) {
                     for (int i = 0; i < arrayResults.length(); i++) {
-                        JSONObject objMovie = new JSONObject(arrayResults.get(i).toString());
-                        String title = objMovie.getString("title");
-                        String overview = objMovie.getString("overview");
-                        String releaseDate = objMovie.getString("release_date");
-                        String imgPoster = "http://image.tmdb.org/t/p/w185" + objMovie.getString("poster_path");
-                        list.add(new Filem(title, overview, releaseDate, imgPoster));
+                        JSONObject objFilem = new JSONObject(arrayResults.get(i).toString());
+                        String title = objFilem.getString("title");
+                        String overview = objFilem.getString("overview");
+                        String releaseDate = objFilem.getString("release_date");
+                        String imgPoster = "http://image.tmdb.org/t/p/w185" + objFilem.getString("poster_path");
+                        String rating = objFilem.getString("vote_average");
+                        list.add(new Filem(title, overview, releaseDate, imgPoster, rating));
                     }
                 }
             }catch (JSONException e){
