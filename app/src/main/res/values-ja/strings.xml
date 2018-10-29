@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">映画リスト</string>
+    <string name="btnMore">続きを読む</string>
+    <string name="txtDate">発売日 ： </string>
+    <string name="txtSyn">概要：</string>
+    <string name="txtMenu">言語設定</string>
+</resources>
